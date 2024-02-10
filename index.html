@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.count">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        #startQuiz, #QuizBox, #restartQuiz{
+            width:75vw;
+            margin:15vh auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- ########   start quiz ########## -->
+    <div id="startQuiz" class="bg-light p-5 shadow">
+        <h1 class="text-center">Quiz</h1>
+        <hr class="mb-4">
+        <input type="text" id="playerName" placeholder="Enter your Name" class="form-control w-50 m-auto">
+        <input  type="button" id="startQuizBtn" value="Start" class="btn btn-dark mt-3 m-auto d-block">
+    </div>
+    
+    <!-- ***********Quiz-Box*************** -->
+    <div id="QuizBox" class="bg-light p-5 shadow">
+        <div class="row">
+            <div class="col">
+               <h4 id="chnagePlayerName">Player</h4>
+            </div>
+            <div class="col">
+                <h4 id="time" class="text-center">00:00</h4>
+            </div>
+            <div class="col">
+                <h4 id="points" class="float-end">Points: 0</h4>
+            </div>
+            <hr>
+             <div class="row">
+                <div class="col">
+                    <h2 id="q">Questons</h2>
+                </div>
+              </div>
+              <div class="row row-cols-2">
+                <div class="col">
+                    <input type="button" value="a" id="a" class="opt btn btn-dark w-100 m-4">
+                </div>
+                <div class="col">
+                    <input type="button" value="b" id="b" class="opt btn btn-dark w-100 m-4">
+                </div>
+                <div class="col">
+                    <input type="button" value="c" id="c" class="opt btn btn-dark w-100 m-4">
+                </div>
+                <div class="col">
+                    <input type="button" value="d" id="d" class="opt btn btn-dark w-100 m-4">
+                </div>
+              </div>
+              <hr class="mt-5">
+
+              <div class="row">
+                <div class="col">
+                    <h4 id="questionNo">Question: 0/0</h4>
+                </div>
+                <div class="col">
+                    <input type="button" value="50:50" id="lifeLine" class="btn btn-dark w-50 d-block m-auto">
+                </div>
+                <div class="col">
+                    <input type="button" id="nextQuestion" value="Next" class="float-end btn btn-outline-dark w-50 ">
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- *************** restart quiz-box**************** -->
+    <div id="restartQuiz" class="bg-light p-5 shadow">
+        <h3 id="finalPoints" class="text-center">Final Points: 0</h3>
+        <input type="button" value="Restart Quiz " class="btn btn-dark d-block mt-4 m-auto" id="restartQuizBtn">
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="index.js"></script>
+
+</body>
+</html>
